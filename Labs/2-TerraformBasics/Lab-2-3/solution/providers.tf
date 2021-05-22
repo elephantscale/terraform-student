@@ -1,4 +1,6 @@
 
+# Lab 2-2 - Configuration
+
 terraform {
     required_providers {
         aws = {
