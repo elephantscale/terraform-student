@@ -8,6 +8,5 @@ resource "aws_instance" "alpha" {
         source = "EC2 Module"
         Name = var.VM_name
     }
-    vpc_security_group_ids = [var.sg_groups]
 }    
 

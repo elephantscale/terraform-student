@@ -13,8 +13,3 @@ variable VM_name {
     type = string
     default = "EC2-Module"
 }
-
-variable "sg_groups" {
-    description = "Associated security groups"
-    type = string
-}
