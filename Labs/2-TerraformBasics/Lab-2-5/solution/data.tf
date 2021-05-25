@@ -33,3 +33,4 @@ data "aws_ami" "ubuntu-east-1" {
 
   owners = ["099720109477"] # Canonical
 }
+
