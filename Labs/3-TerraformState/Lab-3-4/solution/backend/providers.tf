@@ -14,6 +14,4 @@ terraform {
 
 provider aws {
     region = "us-east-2"
-    profile = << Insert your profile name here >>
-}
-
+    profile = "dev"

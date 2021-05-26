@@ -1,6 +1,4 @@
 
-# Lab 2-1 - Configuration
-
 terraform {
     required_providers {
         aws = {
@@ -10,10 +8,24 @@ terraform {
     }
     # Required version of terraform
     required_version = ">0.14"
+      
 }
+
+terraform {
+     backend "s3" {
+        profile = "dev"
+        # Replace this with your bucket name!
+        bucket         = "terraform-zippy"
+        key            = "myproj/terraform.tfstate"
+        region         = "us-east-2"
+
+        # Replace this with your DynamoDB table name!
+        dynamodb_table = "zippy-locks"
+        encrypt        = true
+  }
+} 
 
 provider aws {
     region = "us-east-2"
-    profile = << Insert your profile name here >>
+    profile = "dev"
 }
-
