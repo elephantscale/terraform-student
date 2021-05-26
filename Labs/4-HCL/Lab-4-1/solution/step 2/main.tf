@@ -12,7 +12,7 @@ resource "aws_instance" "Matrix" {
 
 variable "VM_names" {
     type = list(string)
-    default = ["Neo",  "Morpheus"]
+    default = ["Neo", "Trinit", "Morpheus"]
 }
 
 output  "Neo" {
