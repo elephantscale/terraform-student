@@ -3,7 +3,7 @@
 
 locals {
     developer = "Zippy"
-    documentation = templatefile("document.txt", {myname = local.developer})
+    documentation = templatefile("document.txt", {name = local.developer})
 }
 
 resource "aws_instance" "myVM" {

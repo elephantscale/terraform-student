@@ -1,1 +1,1 @@
-Lab 2-3 EC2 Instance
+Hi!, my name is ${name}
