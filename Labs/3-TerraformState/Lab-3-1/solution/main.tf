@@ -1,15 +1,19 @@
 
-# Lab 2-1
+# Lab 3-1
 
-resource "aws_instance" "myVM" {
+resource "aws_instance" "X" {
     ami = "ami-077e31c4939f6a2f3"
-    instance_type = "t2.nano"
+    instance_type = "t2.micro"
     tags = {
-        Name = "Lab 2-1"
+        Name = "Instance X"
     }
 }
 
-resource "aws_s3_bucket" "myBucket" {
-    bucket = << Insert your unique name here >>
+resource "aws_instance" "Y" {
+    ami = "ami-077e31c4939f6a2f3"
+    instance_type = "t2.micro"
+    tags = {
+        Name = "Instance Y"
+    }
 }
 

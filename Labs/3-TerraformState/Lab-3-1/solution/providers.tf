@@ -12,8 +12,7 @@ terraform {
     required_version = ">0.14"
 }
 
-provider aws {
+provider "aws" {
     region = "us-east-2"
-    profile = << Insert your profile name here >>
+    profile = "dev"
 }
-
