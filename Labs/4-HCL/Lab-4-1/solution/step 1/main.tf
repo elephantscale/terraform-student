@@ -1,5 +1,5 @@
 
-# Example 04-01  
+# Lab 04-01
 
 resource "aws_instance" "Clone" {
     count = 3

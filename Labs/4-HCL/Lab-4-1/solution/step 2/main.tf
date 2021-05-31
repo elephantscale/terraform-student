@@ -1,5 +1,5 @@
 
-# Example 04-02 
+# Lab 04-02
 
 resource "aws_instance" "Matrix" {
     count = length(var.VM_names)
@@ -12,7 +12,7 @@ resource "aws_instance" "Matrix" {
 
 variable "VM_names" {
     type = list(string)
-    default = ["Neo", "Trinit", "Morpheus"]
+    default = ["Neo", "Trinity", "Morpheus"]
 }
 
 output  "Neo" {
