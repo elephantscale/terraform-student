@@ -5,7 +5,7 @@ resource "aws_instance" "X" {
     ami = "ami-077e31c4939f6a2f3"
     instance_type = "t2.micro"
     tags = {
-        Name = "Instance X"
+        Name = "Rods VM-X"
     }
 }
 
@@ -13,7 +13,7 @@ resource "aws_instance" "Y" {
     ami = "ami-077e31c4939f6a2f3"
     instance_type = "t2.micro"
     tags = {
-        Name = "Instance Y"
+        Name = "Rods VM-Y"
     }
 }
 
