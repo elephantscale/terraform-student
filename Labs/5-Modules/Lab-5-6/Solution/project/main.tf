@@ -11,11 +11,11 @@ module "VM" {
 
 module "SG" {
   source = "../modules/SGroup"
-  access_port = 8080
-  sg_name = "My Demo"
+  access_port = 80
+  sg_name = "My Security Group"
 }
 
-output "s" {
+output "SG_id" {
   
   value = module.SG.secgps
 }

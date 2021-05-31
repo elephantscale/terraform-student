@@ -3,7 +3,7 @@
 
 ### Overview
  
-This is the second in a series of lab to build a module
+This is the first in a series of labs to implement a module \
 
 ### Run time
 15-20 minutes (est)

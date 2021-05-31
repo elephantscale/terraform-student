@@ -8,6 +8,6 @@ variable "access_port" {
 variable "sg_name" {
     description = "The name of the security group"
     type = string
-    default = "My SG"
+    default = "I have no name"
 }
 

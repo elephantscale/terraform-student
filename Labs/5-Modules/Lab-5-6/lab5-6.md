@@ -2,7 +2,7 @@
 
 ### Overview
  
-This is the sixth in a series of lab to build a module
+This is the last in a series of labs to implement a module
 
 ### Run time
 15-20 minutes (est)
@@ -62,7 +62,7 @@ module "VM" {
 ```hcl
 module "SG" {
   source = "../modules/SGroup"
-  access_port = 8080
+  access_port = 80
   sg_name = "My Demo"
 }
 

@@ -11,5 +11,7 @@ module "VM" {
 
 module "SG" {
   source = "../modules/SGroup"
+  access_port = 80
+  sg_name ="My Security Group"
 }
 

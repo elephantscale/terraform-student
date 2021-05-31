@@ -2,7 +2,7 @@
 
 ### Overview
  
-This is the fourth in a series of lab to build a module
+This is the fourth in a series of lab to implement a module
 
 ### Run time
 15-20 minutes (est)

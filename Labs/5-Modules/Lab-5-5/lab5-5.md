@@ -2,7 +2,7 @@
 
 ### Overview
  
-This is the fifth in a series of lab to build a module
+This is the fifth in a series of labs to implement a module
 
 ### Run time
 15-20 minutes (est)
@@ -42,37 +42,27 @@ resource "aws_security_group" "app_port" {
 variable "access_port" {
     description = "Access port to use for the application"
     type = number
-    default = 80
 }
 
 variable "sg_name" {
     description = "The name of the security group"
     type = string
-    default = "My SG"
+    default = "I have no name"
 }
 
 ```
 
-### Step Two - Pass the variables through to the EC2 module
 
-* In the project module, pass the variable values to the EC2 module
 
-```hcl
-module "VM-1" {
-    source = "../modules/EC2"
-    ami_type = var.machine_amis[0]
-    inst_type = var.machine_types[0]
-    VM_name = var.machine_names[0]
-  }
-```
-
-### Step Three - Add the module 
+### Step Two - Add the  Security Group module 
 
 * In the project folder, add a reference to the security group modules
 
 ```hcl
 module "SG" {
   source = "../modules/SGroup"
+  access_port = 80
+  sg_name ="My Security Group"
 }
 ```
 ### Step Three - Execute
